@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul Dandona's Portfolio</title>
     <style>
+        /* Common styles */
         * {
             margin: 0;
             padding: 0;
@@ -18,7 +19,7 @@
             flex-direction: column;
             min-height: 100vh;
         }
-        header {
+        header, footer {
             background: #333;
             color: #fff;
             padding: 20px 0;
@@ -51,23 +52,15 @@
         h2 {
             margin-bottom: 10px;
         }
-        footer {
+        .profile-image {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        .content-center {
             text-align: center;
-            padding: 10px;
-            background: #333;
-            color: #fff;
         }
-        a.button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px 0;
-            background: #333;
-            color: #fff;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        a.button:hover {
-            background: #f0a500;
+        footer p {
+            margin: 0;
         }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -76,7 +69,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-2K4SV1WZKC');
     </script>
 </head>
@@ -85,17 +77,52 @@
         <h1>Rahul Dandona's Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/rahul-dandona">LinkedIn</a></li>
+                <li><a href="https://github.com/dandonarahul2002">GitHub</a></li>
+                <li><a href="https://drive.google.com/file/d/1TNlajQ34dvuM_OdETZJnTig1cmIKBafx/view?usp=drive_link">Resume</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="welcome">
-            <h2>Welcome</h2>
-            <p>Welcome to my portfolio website. I am a final year engineering student from Mumbai. I can write code in Python and currently skilled for roles in the field of Data Science, Machine Learning and Generative AI</p>
-            <img src="images/profile.jpg" alt="Rahul Dandona" width="200">
+        <section id="about" class="content-center">
+            <h2>About Me</h2>
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-image">
+            <p>Hi, my name is Rahul Dandona, and I am a Data Science and Machine Learning enthusiast. I have experience in building various Machine Learning and Deep Learning Models. I am passionate about solving questions and being curious!</p>
+        </section>
+        <section id="internships">
+            <h2>Internships</h2>
+            <ul>
+                <li>
+                    <strong>NLP Developer/Data Scientist Intern (Founding Team)</strong><br>
+                    Organization: Wokelo AI (VC Funded), Seattle, WA, USA / Remote<br>
+                    Duration: March 2023 - August 2023, December 2023 - May 2024<br>
+                    - Developed MVP, helped raise $1.5M in funding.<br>
+                    - Created SOTA NER and Object Detection models.<br>
+                    - Fine-tuned LLMs, utilized OpenAI API.<br>
+                    - Built RAG pipeline for Financial Transcripts.<br>
+                    - Designed document generators, enhancing efficiency.<br>
+                    - Developed data scrapers, expanding database.<br>
+                </li>
+                <li>
+                    <strong>Data Analyst Intern</strong><br>
+                    Organization: DukaanDost, Mumbai, India / Hybrid<br>
+                    Duration: March 2022 - April 2022<br>
+                    - Performed Data Scraping, Cleaning, and Preprocessing.<br>
+                    - Scraped details of garment retailers from 220+ locations.<br>
+                </li>
+            </ul>
+        </section>
+        <section id="achievements">
+            <h2>Key Achievements</h2>
+            <ul>
+                <li>Selected for EthGlobal Singapore 2024 (20-22 September 2024)</li>
+                <li>Selected for CVIT’s 7th Summer School on AI at IIIT Hyderabad (8-15 July 2023)</li>
+                <li>Organized “DATATHON 2024” with 1200+ registrations across India</li>
+                <li>Selected for Code in Place 2021 by Stanford University in 12th Grade</li>
+            </ul>
         </section>
     </main>
     <footer>
