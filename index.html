@@ -1,40 +1,129 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <link rel = "stylesheet" href = "style.css">
-    <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul Dandona's Portfolio</title>
-  </head>
-  <body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f0a500;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        a.button:hover {
+            background: #f0a500;
+        }
+        .project-list li {
+            margin: 5px 0;
+        }
+        .project-list li a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #333;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        .project-list li a:hover {
+            color: #f0a500;
+            border-color: #f0a500;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2K4SV1WZKC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2K4SV1WZKC');
+    </script>
+</head>
+<body>
     <header>
-      <h1>Rahul Dandona's Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/rahul-dandona">Linkedin</a></li>
-          <li><a href="https://github.com/dandonarahul2002">Github</a></li>
-          <li><a href="https://drive.google.com/file/d/1TNlajQ34dvuM_OdETZJnTig1cmIKBafx/view?usp=drive_link">Resume</a></li>
-        </ul>
-      </nav>
+        <h1>Rahul Dandona's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/rahul-dandona">LinkedIn</a></li>
+                <li><a href="https://github.com/dandonarahul2002">GitHub</a></li>
+                <li><a href="https://drive.google.com/file/d/1TNlajQ34dvuM_OdETZJnTig1cmIKBafx/view?usp=drive_link">Resume</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hi, my name is Rahul Dandona and I am a Data Science and Machine learning enthusiast. I have experience in building various Machine Learning and Deep Learning Models. I am passionate about solving questions and being curious!
-        </p>
-      </section>
-      <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-          <li><a href="https://github.com/GG-PEEPS/LearnWise">Learnwise</a></li>
-          <li><a href="https://github.com/kartikm7/team-ventures-devopia">Project 2</a></li>
-          <li><a href="https://github.com/dandonarahul2002/Climate_Change_Analysis">Project 3</a></li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2><a href = "form.html">Get in Touch</a></h2>
-      </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, my name is Rahul Dandona and I am a Data Science and Machine Learning enthusiast. I have experience in building various Machine Learning and Deep Learning Models. I am passionate about solving questions and being curious!</p>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul class="project-list">
+                <li><a href="https://github.com/GG-PEEPS/LearnWise">Learnwise</a></li>
+                <li><a href="https://github.com/kartikm7/team-ventures-devopia">Project 2</a></li>
+                <li><a href="https://github.com/dandonarahul2002/Climate_Change_Analysis">Project 3</a></li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <a class="button" href="form.html">Contact Me</a>
+        </section>
     </main>
     <footer>
-      <p>Copyright © 2024 Rahul Dandona's Portfolio</p>
+        <p>&copy; 2024 Rahul Dandona's Portfolio</p>
+    </footer>
+</body>
+</html>
